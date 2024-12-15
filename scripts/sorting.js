@@ -3,7 +3,6 @@ let arrsizer = document.querySelector("#sizer");
 arrsizer.addEventListener("input", function () {
   generateBars(parseInt(arrsizer.value));
 });
-
 generateBars();
 
 let time = 100;

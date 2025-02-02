@@ -1,4 +1,4 @@
-# Sorting Visualizer
+# Sorting Algorithm Visualizer
 
 This project is a **Sorting Algorithm Visualizer** that helps users understand how different sorting algorithms work by visually representing the sorting process in real time.
 

@@ -40,7 +40,7 @@ The Sorting Visualizer allows users to select a sorting algorithm and observe ho
 5. Use **Shuffle** to randomize the array again.
 
 ## Live Demo
-You can view the project here: [Sorting Visualizer Live Demo](https://amanc77.github.io/Sorting-Visualizer/)
+You can view the project here: [Sorting Visualizer Live Demo](https://amanc77.github.io/Sorting-Algorithm-Visualizer/)
 
 ## Screenshots
 ### Home Page

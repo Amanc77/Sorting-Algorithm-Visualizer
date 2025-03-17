@@ -3,45 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sorting Visualizer</title>
+    <title>Sorting Algorithm Visualizer</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <h1>Sorting Visualizer</h1>
     <div class="container">
-      <button id="newarr">New Array</button>
-      <span>
-        Size:<input
-          id="sizer"
-          type="range"
-          min="10"
-          max="100"
-          step="1"
-          value="60"
-        />
-      </span>
-      <span>
-        Speed:<input
-          id="speed"
-          type="range"
-          min="10"
-          max="240"
-          step="1"
-          value="100"
-        />
-      </span>
-      <button id="bubble">Bubble Sort</button>
-      <button id="selection">Selection Sort</button>
-      <button id="insertion">Insertion Sort</button>
-      <button id="merge">Merge Sort</button>
-      <button id="quick">Quick Sort</button>
-      <div id="bar"></div>
+      <!-- Controls Section -->
+      <div class="controls">
+        <button id="newarr">New Array</button>
+        <span>
+          <label for="sizer">Size:</label>
+          <input
+            id="sizer"
+            type="range"
+            min="10"
+            max="100"
+            step="1"
+            value="60"
+          />
+        </span>
+        <span>
+          <label for="speed">Speed:</label>
+          <input
+            id="speed"
+            type="range"
+            min="10"
+            max="240"
+            step="1"
+            value="100"
+          />
+        </span>
 
-      <script src="./scripts/sorting.js"></script>
-      <script src="./scripts/bubble.js"></script>
-      <script src="./scripts/insertion.js"></script>
-      <script src="./scripts/merge.js"></script>
-      <script src="./scripts/quick.js"></script>
-      <script src="./scripts/selection.js"></script>
+        <button id="bubble">Bubble Sort</button>
+        <button id="selection">Selection Sort</button>
+        <button id="insertion">Insertion Sort</button>
+        <button id="merge">Merge Sort</button>
+        <button id="quick">Quick Sort</button>
+      </div>
+
+      <!-- Sorting Bar Container -->
+      <div id="bar"></div>
     </div>
+
+    <!-- Scripts -->
+    <script src="./scripts/sorting.js"></script>
+    <script src="./scripts/bubble.js"></script>
+    <script src="./scripts/insertion.js"></script>
+    <script src="./scripts/merge.js"></script>
+    <script src="./scripts/quick.js"></script>
+    <script src="./scripts/selection.js"></script>
   </body>
 </html>

@@ -12,21 +12,21 @@ sortSpeed.addEventListener("input", function () {
   time = 245 - parseInt(sortSpeed.value);
 });
 
+// Function to generate bars with random heights
 function generateBars(noBar = 60) {
-  console.log("genrate array");
   document.getElementById("bar").innerHTML = "";
-  let bars = [];
-  for (let i = 0; i < noBar; i++) {
-    bars.push(Math.floor(Math.random() * 400) + 1);
-  }
+  let bars = Array.from(
+    { length: noBar },
+    () => Math.floor(Math.random() * 400) + 1
+  );
+
   const divs = document.querySelector("#bar");
-  for (let x = 0; x < noBar; x++) {
+  bars.forEach((height) => {
     const temp = document.createElement("div");
-    temp.classList.add("sort");
-    temp.classList.add("baritem");
-    temp.style.height = bars[x] + "px";
+    temp.classList.add("sort", "baritem");
+    temp.style.height = height + "px";
     divs.append(temp);
-  }
+  });
 }
 
 document.getElementById("newarr").addEventListener("click", function () {
@@ -35,6 +35,7 @@ document.getElementById("newarr").addEventListener("click", function () {
   enableSizeSlider();
 });
 
+// Function to swap heights of two elements
 function swap(ele1, ele2) {
   let temp = ele1.style.height;
   ele1.style.height = ele2.style.height;
@@ -42,26 +43,20 @@ function swap(ele1, ele2) {
 }
 
 function delay(milisec) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("");
-    }, milisec);
-  });
+  return new Promise((resolve) => setTimeout(resolve, milisec));
 }
 
+// Enable or disable sorting buttons
 function disableSortingBtn() {
-  document.querySelector("#bubble").disabled = true;
-  document.querySelector("#insertion").disabled = true;
-  document.querySelector("#merge").disabled = true;
-  document.querySelector("#quick").disabled = true;
-  document.querySelector("#selection").disabled = true;
+  document
+    .querySelectorAll("#bubble, #insertion, #merge, #quick, #selection")
+    .forEach((btn) => (btn.disabled = true));
 }
+
 function enableSortingBtn() {
-  document.querySelector("#bubble").disabled = false;
-  document.querySelector("#insertion").disabled = false;
-  document.querySelector("#merge").disabled = false;
-  document.querySelector("#quick").disabled = false;
-  document.querySelector("#selection").disabled = false;
+  document
+    .querySelectorAll("#bubble, #insertion, #merge, #quick, #selection")
+    .forEach((btn) => (btn.disabled = false));
 }
 
 function disableSizeSlider() {

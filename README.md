@@ -2,6 +2,10 @@
 
 This project is a **Sorting Algorithm Visualizer** that helps users understand how different sorting algorithms work by visually representing the sorting process in real time.
 
+## Live Demo
+You can view the project here: [Sorting Algorithm Visualizer Live Demo](https://amanc77.github.io/Sorting-Algorithm-Visualizer/)
+
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -39,8 +43,6 @@ The Sorting Visualizer allows users to select a sorting algorithm and observe ho
 4. Click on **Start** to begin the sorting visualization.
 5. Use **Shuffle** to randomize the array again.
 
-## Live Demo
-You can view the project here: [Sorting Algorithm Visualizer Live Demo](https://amanc77.github.io/Sorting-Algorithm-Visualizer/)
 
 ## Screenshots
 ### Home Page

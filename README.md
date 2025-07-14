@@ -29,7 +29,6 @@ The Sorting Visualizer allows users to select a sorting algorithm and observe ho
   - Quick Sort
 - Customizable array size and speed of visualization.
 - Shuffle or reset the array to try again.
-- Interactive and responsive user interface.
 
 ## Technologies Used
 - **HTML**: Structure of the webpage.

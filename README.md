@@ -43,7 +43,6 @@ The Sorting Visualizer allows users to select a sorting algorithm and observe ho
 5. Use **Shuffle** to randomize the array again.
 
 
-## Screenshots
 ### Home Page
 ![Screenshot from 2024-12-17 22-16-55](https://github.com/user-attachments/assets/79c2c74b-d37b-498b-a835-90abaf5c84fa)
 
